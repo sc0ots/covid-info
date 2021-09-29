@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DemoOTP</string>
+    <string name="app_home">home</string>
+    <string name="app_favorite">favorite</string>
+    <string name="app_my_pager">pager</string>
+    <string name="app_contact">contact</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="active">Active</string>
+    <string name="recovered">Recovered</string>
+    <string name="total">Total</string>
+    <string name="deaths">Deaths</string>
+    <string name="covid_19">Covid-Info</string>
+    <string name="country">Country</string>
+    <string name="cases">Cases</string>
+    <string name="increment_number">+0</string>
+    <string name="number">0</string>
+    <string name="see_details"><a href="https://ncovi.vnpt.vn/views/ncovi_detail.html"><u>Xem chi tiết</u></a> </string>
+    <string name="HDCD"><a href="https://ncovi.vnpt.vn/views/ncovi_detail.html"><u>Hướng dẫn phòng chống dịch</u></a> </string>
+
+</resources>

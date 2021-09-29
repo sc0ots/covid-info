@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.demootp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DemoOTP">
+        <activity
+            android:name=".HOME.SoSucKhoeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HOME.TermsUserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HOME.PCRActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCuBiBEgfNE6NOB5JF65cj5_Ty44AIDmQQ" />
+
+        <activity
+            android:name=".HOME.MapActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HOME.TravelActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HOME.webView"
+            android:exported="true" />
+        <activity
+            android:name=".LOGIN.CreateUserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HOME.TokhaiYteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HOME.khaibaoYTeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HOME.DetailsUserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HOME.ResultActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LOGIN.OTP_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".LOGIN.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

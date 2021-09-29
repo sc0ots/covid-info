@@ -1,0 +1,16 @@
+.sidebar.active ~ .wrapper{
+    position: absolute;
+    left: 240px;
+    right: 0;
+    transition: all 0.5s ease;
+
+}
+.sidebar ~ .wrapper{
+    position: absolute;
+    /* width: calc(100% - 240px); */
+    left: 78px;
+    right: 0;
+    transition: all 0.5s ease;
+    top: 0;
+    height: 58px;
+}

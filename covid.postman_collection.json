@@ -1,0 +1,2301 @@
+{
+	"info": {
+		"_postman_id": "9c0f7806-6028-4bb6-972f-9036e9d72265",
+		"name": "covid",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"username\": \"tomcat\",\r\n\"password\": \"123\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/admins/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"admins",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "username",
+								"value": "admin",
+								"type": "text"
+							},
+							{
+								"key": "password",
+								"value": "123",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "staff",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/admins/login?username=staff&password=123",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"admins",
+								"login"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "staff"
+								},
+								{
+									"key": "password",
+									"value": "123"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/admins/show",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"admins",
+								"show"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin getbyid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/admins/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"admins",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getsession",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/admins/getsession",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admins",
+								"getsession"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/admins/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"admins",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/admins/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"admins",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "chinh",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/admins/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"admins",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getidfromusername",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/medstf/getidfromusername/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"medstf",
+								"getidfromusername",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "medstf",
+			"item": [
+				{
+					"name": "medstf",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "medical_lícense",
+									"value": "13456",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "medical stafff",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12222",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "asdasd",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "1994-09-21",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/medstf/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"medstf",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "medstf show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/medstf/show",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"medstf",
+								"show"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "medstf getbyid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/medstf/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"medstf",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "medical_lícense",
+									"value": "13456",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "medical stafff",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1233222",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "staff",
+									"type": "text"
+								},
+								{
+									"key": "yob",
+									"value": "1994-21-09",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/medstf/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"medstf",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "medstf delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/medstf/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"medstf",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/medstf/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"medstf",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/medstf/search?name=phat",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"medstf",
+								"search"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "phat"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getidfromusername",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/medstf/getidfromusername/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"medstf",
+								"getidfromusername",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Phong\",\r\n    \"citizen_id\": 123456,\r\n    \"gender\": 0,\r\n    \"yob\": 1997,\r\n    \"address\":\"590 Nguyễn Thị Thập\",\r\n    \"phone\": 123,\r\n    \"status\": 0\r\n  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "username",
+								"value": "admin",
+								"type": "text"
+							},
+							{
+								"key": "password",
+								"value": "123",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/users/login?phone=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"users",
+								"login"
+							],
+							"query": [
+								{
+									"key": "phone",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getsession",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/users/getsession",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"users",
+								"getsession"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/users/showUsers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"users",
+								"showUsers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user getbyid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/users/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\":\"chinh\",\r\n\"citizen_id\":32141,\r\n\"gender\":1,\r\n\"yob\":2000,\r\n\"phone\":123,\r\n\"address\":\"123 street\",\r\n\"status\":0\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/users/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/users/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"users",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/users/search?username=phat",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"users",
+								"search"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "phat"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "chekcphone",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[0965420753]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/users/checkphone?phone=0965420752",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"users",
+								"checkphone"
+							],
+							"query": [
+								{
+									"key": "phone",
+									"value": "0965420752"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getidfromphone",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/users/getidfromphone/0965420753",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"users",
+								"getidfromphone",
+								"0965420753"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getbystatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/users/getbystatus/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"users",
+								"getbystatus",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "count",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/users/count",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"users",
+								"count"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vac1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"vac1\":\"Astra\",\r\n\"date1\":\"2021-09-16\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/users/vac1/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"users",
+								"vac1",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vac2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"vac2\":\"Astra\",\r\n\"date2\":\"2021-09-16\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/users/vac2/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"users",
+								"vac2",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "f0",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{        \r\n        \"user_id\": 5,\r\n        \"temp\": 37,\r\n        \"heart_rate\": 2200,\r\n        \"tlc\": 800,\r\n        \"spo2\": 80,\r\n        \"area_id\": 1\r\n\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/user_f0s/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"user_f0s",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "f0 show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/user_f0s/show",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"user_f0s",
+								"show"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "f0 getbyuserid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/user_f0s/getbyuserid/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"user_f0s",
+								"getbyuserid",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "f0 getbyid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/user_f0s/14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"user_f0s",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"area_id\":2,\r\n\"heart_rate\":140,\r\n\"spo2\":80,\r\n\"temp\":36,\r\n\"tlc\":5000,\r\n\"user_id\":4\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/user_f0s/14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"user_f0s",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "f0 delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/user_f0s/16",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"user_f0s",
+								"16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/user_f0s/search?name=phat",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"user_f0s",
+								"search"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "phat"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "f1",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"area_id\":2,\r\n    \"user_id\":5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/user_f1s/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"user_f1s",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "f1 show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/user_f1s/show",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"user_f1s",
+								"show"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "f1 getbyid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/user_f1s/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"user_f1s",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "f1 getbyuserid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/user_f1s/getbyuserid/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"user_f1s",
+								"getbyuserid",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"day_start\":\"2021-08-02\",\r\n\"day_end\":\"2021-08-13\",\r\n\"area_id\":2,\r\n\"user_id\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/user_f1s/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"user_f1s",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "f1 delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/user_f1s/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"user_f1s",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/user_f1s/search?name=phat",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"user_f1s",
+								"search"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "phat"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteoverdue",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/user_f1s/deleteoverdue",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"user_f1s",
+								"deleteoverdue"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "health_daily",
+			"item": [
+				{
+					"name": "health_daily show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/health_daily/show",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"health_daily",
+								"show"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "health_daily getbyid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/health_daily/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"health_daily",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getbyuserid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/health_daily/getbyuserid/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"health_daily",
+								"getbyuserid",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "health_dcls",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"user_id\":2,\r\n\"is_cough\":1,\r\n\"is_fever\":1,\r\n\"is_breath\":1,\r\n\"is_tired\":1,\r\n\"is_strong\":0\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/health_daily/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"health_daily",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/health_daily/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"health_daily",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/health_daily/search?name=phat",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"health_daily",
+								"search"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "phat"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "health_dcls",
+			"item": [
+				{
+					"name": "health_dcls show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/health_dcls/show",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"health_dcls",
+								"show"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "health_dcls getbyid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/health_dcls/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"health_dcls",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getbyuserid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/health_dcls/getbyuserid/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"health_dcls",
+								"getbyuserid",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "health_dcls",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"user_id\":2,\r\n\"is_travel\":1,\r\n\"is_fever\":1,\r\n\"is_cough\":1,\r\n\"is_nobreath\":1,\r\n\"is_pnue\":1,\r\n\"is_throat\":1,\r\n\"is_tire\":1,\r\n\"is_contact_f0\":1,\r\n\"is_contact_suspect\":1,\r\n\"have_chronic\":1,\r\n\"have_heart_pressure\":1,\r\n\"have_hiv_immu\":1,\r\n\"have_transplant\":1,\r\n\"have_diabetes\":1,\r\n\"have_cancer\":1,\r\n\"have_prenant\":1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/health_dcls/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"health_dcls",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/health_dcls/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"health_dcls",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/health_dcls/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"health_dcls",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/health_dcls/search?name=phat",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"health_dcls",
+								"search"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "phat"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pcr",
+			"item": [
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/pcrs/show",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"pcrs",
+								"show"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showbyid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/pcrs/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"pcrs",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getbyuserid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/pcrs/getbyuserid/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"pcrs",
+								"getbyuserid",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/pcrs/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"pcrs",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/pcrs/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"pcrs",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/pcrs/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"pcrs",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/pcrs/search?name=phat",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"pcrs",
+								"search"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "phat"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "travel_history",
+			"item": [
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/travel_histories/show",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"travel_histories",
+								"show"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "datefrom",
+									"value": "2021-08-31",
+									"type": "text"
+								},
+								{
+									"key": "dateto",
+									"value": "2021-09-02",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/covid/travel_histories/search?name=phat&dateto=&datefrom=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"travel_histories",
+								"search"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "phat"
+								},
+								{
+									"key": "dateto",
+									"value": ""
+								},
+								{
+									"key": "datefrom",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showbyid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/travel_histories/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"travel_histories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/travel_histories/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"travel_histories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/travel_histories/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"travel_histories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/travel_histories/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"travel_histories",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showbyuserid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/travel_histories/getbyuserid/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"travel_histories",
+								"getbyuserid",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/travel_histories/search?name=phat&datefrom=&dateto=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"travel_histories",
+								"search"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "phat"
+								},
+								{
+									"key": "datefrom",
+									"value": ""
+								},
+								{
+									"key": "dateto",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "quarantine_area",
+			"item": [
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/quarantinearea/show",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"quarantinearea",
+								"show"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showbyid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/quarantinearea/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"quarantinearea",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getlist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/quarantinearea/quarantinelist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"quarantinearea",
+								"quarantinelist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/quarantinearea/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"quarantinearea",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/quarantinearea/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"quarantinearea",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/quarantinearea/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"quarantinearea",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getuserlistbyareaid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/quarantinearea/getuserlistbyareaid/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"quarantinearea",
+								"getuserlistbyareaid",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "treatmentarea",
+			"item": [
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/treatmentarea/show",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"treatmentarea",
+								"show"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showbyid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/treatmentarea/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"treatmentarea",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getlist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/treatmentarea/treatmentlist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"treatmentarea",
+								"treatmentlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/treatmentarea/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"treatmentarea",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/treatmentarea/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"treatmentarea",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/treatmentarea/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"treatmentarea",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getuserlistbyareaid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/covid/treatmentarea/getuserlistbyareaid/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"covid",
+								"treatmentarea",
+								"getuserlistbyareaid",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

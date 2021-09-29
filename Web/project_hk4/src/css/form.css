@@ -1,0 +1,51 @@
+.form{
+    width: 100%;
+}
+.form-group{
+
+}
+.input-label{
+    font-weight: bold;
+    padding: 10px 0;
+}
+.input-text{
+    padding: 12px;
+    border: 1px solid #dededf;
+    outline: none;
+    height: 37px;
+    width: 100%;
+    border-radius: 4px;
+    color: #212121;
+    font-size: 14px;
+}
+.input-text::placeholder{
+   color: #cccccc;
+
+}
+.btn-submit{
+    margin: 16px 0 0 0;
+    padding: 10px 24px;
+    border-radius: 4px;
+    background: #2185d0;
+    color: #fff;
+    border: 1px solid #dededf;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.btn-submit:disabled{
+    background: #e0e1e2;
+    color: #fff;
+    border: none;
+    cursor: auto;
+}
+.errorMessage{
+    border: 1px solid #e0b4b4;
+
+}
+.errorMessage::placeholder{
+    color: #e7bdbc;
+
+}
+
+

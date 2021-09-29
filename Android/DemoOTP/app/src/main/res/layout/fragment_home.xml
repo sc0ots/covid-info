@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F1E8E8"
+    tools:context=".HOME.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/topbg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/relativedg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_weight="2"
+                    android:text="@string/covid_19"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="2"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ttVN"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/country_code_drawble1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="VietNam"
+                        android:textSize="21sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ttTD"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/country_code_drawble">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Thế giới"
+                        android:textSize="21sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:orientation="horizontal">
+
+
+                <org.eazegraph.lib.charts.PieChart
+                    android:id="@+id/piechart"
+                    android:layout_width="220dp"
+                    android:layout_height="180dp"
+                    android:padding="8dp"
+                    app:egLegendColor="@color/black"
+                    app:egLegendTextSize="20sp"
+                    app:egUsePieRotation="true"
+                    app:egValueTextColor="@color/black"
+                    app:egValueTextSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/viewbg"
+                            android:backgroundTint="@color/green" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="Đang chữa bệnh"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/viewbg"
+                            android:backgroundTint="@color/blue" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="Bình phục"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/viewbg"
+                            android:backgroundTint="@color/yellow" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="Nhiễm bệnh"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/viewbg"
+                            android:backgroundTint="@color/red" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="Tử vong"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/detailscovid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbg"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            android:id="@+id/txtthongtin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:paddingLeft="20dp"
+            android:text="Thông tin Việt Nam"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/seedetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:autoLink="web"
+            android:gravity="center"
+            android:text="@string/see_details"
+            android:textColor="#4D25C5"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/middlebg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailscovid"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:padding="5dp"
+            android:useDefaultMargins="true">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#EAE9E9"
+                app:strokeColor="#0C0F45"
+                app:strokeWidth="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/viewbg"
+                            android:backgroundTint="@color/yellow"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Nhiễm bệnh"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/totalcase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/number"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/todaytotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/increment_number"
+                        android:textColor="@color/yellow"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#EAE9E9"
+                app:strokeColor="#0C0F45"
+                app:strokeWidth="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/viewbg"
+                            android:backgroundTint="@color/green"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Đang chữ trị"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/activecase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/number"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#EAE9E9"
+                app:strokeColor="#0C0F45"
+                app:strokeWidth="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/viewbg"
+                            android:backgroundTint="@color/blue"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Bình phục"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/recoveredcase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/number"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/todayrecovered"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/increment_number"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#EAE9E9"
+                app:strokeColor="#0C0F45"
+                app:strokeWidth="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/viewbg"
+                            android:backgroundTint="@color/red"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Tử vong"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/totaldeath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/number"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/todaydeath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/increment_number"
+                        android:textColor="@color/red"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </GridLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/thongtinyte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/middlebg"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/carkbyt"
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#195BA6"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/kbyte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Khai báo y tế
+                tự nguyện"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="21sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/carhdyt"
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#195BA6"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/hdyt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Hướng dẫn phòng chống dịch"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="21sp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/thongtinyte"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/relativedgg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Quốc gia"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:paddingStart="40dp"
+                android:paddingLeft="40dp"
+                android:text="Ca nhiễm"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_horizontal"></Spinner>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rycyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-5dp"
+            android:layout_marginBottom="60dp"
+            android:padding="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

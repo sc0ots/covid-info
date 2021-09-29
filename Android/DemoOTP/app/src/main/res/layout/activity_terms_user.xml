@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HOME.TermsUserActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Điều khoản sử dụng"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Ứng dụng hỗ trợ y tế tự nguyện phòng chống dịch Covid-19(Covid-Info)"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Điều 1. Đăng ký tài khoản"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Để thực hiện việc khai báo y tế tự nguyện, đầu tiên người dùng cần tải về và cài đặt ứng dụng Covid-Info."
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="- Người sử dụng tự chịu trách nhiệm về năng lực hành vi trong việc đăng ký tài khoản và có trách nhiệm tự bảo mật thông tin tài khoản"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="- Nếu Người sử dụng biết hoặc nghi ngờ rằng mã OTP hoặc tài khoản của mình đã bị xâm nhập, hãy báo cho đội ngũ hỗ trợ NCOVI tại mục Liên hệ."
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="- Để bảo vệ Tài khoản của bạn, hãy giữ bí mật mã OTP của bạn. "
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Điều 2. Bảo vệ sự riêng tư và bản quyền"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" - Chúng tôi xử lý dữ liệu cá nhân của bạn và bảo vệ quyền riêng tư của bạn khi bạn sử dụng ứng dụng. Dữ liệu của bạn sẽ được lưu trữ và bảo mật tuyệt đối bởi cơ quan chính phủ và chỉ sử dụng vào mục đích giúp người dân bảo vệ sức khoẻ và chống dịch bệnh, tuyệt đối không sử dụng vào mục đích thương mại, không xâm phạm đời tư."
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="- Ngoài các mục đích trên, đơn vị phát triển ứng dụng không được phép thu thập, sử dụng thông tin của người sử dụng vào bất kỳ mục đích gì. Và sẽ không rò rỉ bất kỳ thông tin nào có thể gây tổn hại hoặc thực hiện bất kỳ hành vi bất hợp pháp nào về quyền riêng tu tủa vạn theo luật pháp Việt Nam hoặc chính sách của ứng dụng khai báo y tế tự nguyện ."
+                android:textSize="15dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Điều 3. Nội dung cung cấp , trao đổi thông tin"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" Cho phép người dân khai báo thông tin sức khỏe của bản thân và gia đình mọi lúc , mọi nơi . "
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="- Người dân được tiếp cận thông tin về dịch bệnh nhanh chóng , biết được khu vực nào có dịch , khu vực nào an toàn , và xác định được bản thân có nguy cơ lây nhiễm hay không "
+                android:textSize="15dp" /> <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" - Người dân được hướng dẫn cách phòng tránh dịch , cập nhật thống kê , thông tin dịch bệnh liên tục . Được hỗ trợ y tế kịp thời khi gặp các dấu hiệu bất thường về sức khỏe . "
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="- Về phía cơ quan chức năng : quản lý được thông tin di chuyển của các đối tượng trong diện cần theo dõi như : những cá nhân đã nhiễm , nghi nhiễm hoặc tiếp xúc với người nhiễm bệnh , hoặc đối tượng về từ vùng dịch , ... giúp chính phủ ra được quyết định nhanh chóng về những trường hợp bị cách ly , trường hợp nghi lây nhiễm , đồng thời có thể khuyến cáo , hướng dẫn người dân phòng tránh dịch hiệu quả."
+                android:textSize="15dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Điều 4. Quyền , trách nhiệm của người sử dụng "
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="- Tuân thủ các quy định về bảo đảm an toàn thông tin, an ninh thông tin . Người sử dụng đảm bảo khai báo các thông tin chính xác , có độ xác thực cao ."
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="- Được bảo vệ bí mật thông tin riêng và thông tin Người sử dụng theo quy định của pháp luật "
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="- Trong quá trình sử dụng sản phẩm , Người sử dụng được sử dụng các dịch vụ hỗ trợ theo quy định . Khi phát hiện ra lỗi của sản phẩm , Người sử dụng hãy thông báo cho chúng tôi qua đội ngũ hỗ trợ Covid-Info - Thực hiện quyền và trách nhiệm khác theo quy định pháp luật ."
+                android:textSize="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:background="#C8BCBC"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:text="Đội ngũ phát triển Covid-Info"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Thành viên :"
+                android:textSize="20dp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Võ Đức Chính"
+                android:textSize="20dp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Hoàng Giang Chuân"
+                android:textSize="20dp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Nguyên Nhuận Phát"
+                android:textSize="20dp"
+
+                />  <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Đào Nguyễn Xuân Huy"
+                android:textSize="20dp"
+
+                />
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_email"
+                    />
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="FPTAptech@gmail.com.vn"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_phone_call"
+                    />
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="02873005654"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

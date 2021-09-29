@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:orientation="vertical"
+    tools:context=".HOME.DetailsUserActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Nhập thông tin cá nhân"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="normal"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Họ và Tên"
+                    android:textColor="#635F5F"
+                    android:textSize="22sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="*"
+                    android:textColor="#F60B0B"
+                    android:textSize="21sp"
+
+                    />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/textnameput"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5sp"
+                android:textSize="22sp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Năm sinh"
+                    android:textColor="#635F5F"
+                    android:textSize="22sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="*"
+                    android:textColor="#F60B0B"
+                    android:textSize="21sp"
+
+                    />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/textyearput"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5sp"
+
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giớ tính"
+                    android:textColor="#635F5F"
+                    android:textSize="22sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="*"
+                    android:textColor="#F60B0B"
+                    android:textSize="21sp"
+
+                    />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbNamput"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nam"
+                    android:textAlignment="center"
+                    android:textSize="21sp" />
+
+                <RadioButton
+                    android:id="@+id/rbNuput"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="Nữ"
+                    android:textAlignment="center"
+                    android:textSize="21sp" />
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số CMT/CCCD/Hộ chiếu"
+                    android:textColor="#635F5F"
+                    android:textSize="22sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="*"
+                    android:textColor="#F60B0B"
+                    android:textSize="21sp"
+
+                    />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/textcitizen_idput"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5sp"
+                android:enabled="false"
+
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Địa chỉ hiện tại"
+                    android:textColor="#635F5F"
+                    android:textSize="22sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="*"
+                    android:textColor="#F60B0B"
+                    android:textSize="21sp"
+
+                    />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/textaddressput"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5sp"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số điện thoại"
+                    android:textColor="#635F5F"
+                    android:textSize="22sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="*"
+                    android:textColor="#F60B0B"
+                    android:textSize="21sp"
+
+                    />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/textphoneput"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5sp"
+                android:enabled="false"
+
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tôi xin cam đoan rằng thông tin được cung cấp là đúng sự thật" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Cập nhật" />
+    </LinearLayout>
+
+</ScrollView>

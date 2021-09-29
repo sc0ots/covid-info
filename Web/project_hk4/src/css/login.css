@@ -1,0 +1,68 @@
+.login-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4),rgba(0,0,0,0.6)), url("../img/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1000;
+
+}
+.login-block{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    width: 400px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 40px 30px;
+
+}
+.login-form-group{
+    padding: 12px 0;
+}
+.login-heading{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    letter-spacing: 4px;
+
+}
+.login-label{
+    padding: 6px 0;
+    font-size: 14px;
+    color: black;
+}
+
+.login-input{
+    padding: 12px;
+    width: 100%;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid #dededf;
+
+}
+.login-btn{
+    padding: 14px;
+    margin-top: 28px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    letter-spacing: 4px;
+    background: #7F7FD5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}

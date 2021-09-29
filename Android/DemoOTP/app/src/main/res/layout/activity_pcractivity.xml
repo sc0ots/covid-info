@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".HOME.PCRActivity">
+    <LinearLayout
+        android:background="#2EBFD3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kết quả xét nghiệm PCR"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/ic_covid_test"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Họ và Tên :"
+
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/PCRName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số điện thoại :"
+
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/PCRSDT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:text="Kết quả xét nghiệm"
+            android:layout_marginBottom="10dp"
+            />   <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="30">
+
+            <TextView
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:text="Lần xét nghiệm"
+                android:textSize="17dp" />
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+
+                android:background="@color/black"/>
+
+            <TextView
+                android:layout_margin="5dp"
+
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:text="Ngày xét nghiệm"
+                android:textSize="17dp" />
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+
+                android:background="@color/black"/>
+            <TextView
+                android:layout_margin="5dp"
+
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:text="Kết quả"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/PCRrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginBottom="60dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

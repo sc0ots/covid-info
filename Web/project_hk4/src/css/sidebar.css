@@ -1,0 +1,212 @@
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 78px;
+    background: #11101d;
+    padding: 6px 14px;
+    transition: all 0.5s ease;
+}
+.sidebar.active{
+    width: 240px;
+}
+.logo-content{
+    border-bottom: 1px solid #fff;
+}
+.logo{
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar.active .logo{
+    opacity: 1;
+}
+.logo img{
+    font-size: 28px;
+    margin-right: 5px;
+}
+.logo .logo_name{
+    font-size: 20px;
+    font-weight: 400;
+  white-space:  nowrap;
+
+}
+.logo-content #btn{
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 6px;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+
+}
+.sidebar.active #btn{
+    left: 90%;
+}
+.sidebar ul{
+    margin-top: 20px;
+}
+.sidebar ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    line-height: 50px;
+    list-style: none;
+}
+.sidebar ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    line-height: 50px;
+    list-style: none;
+}
+.sidebar ul li .tooltip{
+    position: absolute;
+    z-index: 1;
+    left: 60px;
+    top: 0;
+    transform: translateY(-50%, -50%);
+    border-radius: 6px;
+    height: 35px;
+    width: 122px;
+    background: #fff;
+    line-height: 35px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    display: none;
+}
+.sidebar.active ul li .tooltip{
+    transition: all 0.5 ease;
+    display: none;
+}
+
+.sidebar ul li:hover .tooltip{
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    animation: opacityTooltip 0.3s;
+}
+@keyframes opacityTooltip {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+    
+}
+.sidebar.active ul li:hover .tooltip{
+    display: none;
+
+}
+
+.sidebar ul li a{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  border-radius: 12px;
+  white-space:  nowrap;
+  
+}
+.sidebar.active  ul li a{
+  justify-content: flex-start;
+  padding-left: 10px ;
+
+}
+
+
+.sidebar ul li a:hover{
+    color: #11101d;
+    background: #fff;
+    
+}
+.sidebar ul li a img{
+    width: 20px;
+   height: 50px;
+   line-height: 50px;
+   border-radius: 12px;
+  }
+.sidebar.active ul li a img{
+    margin-right: 10px;
+}
+  .sidebar ul li a .links_name{
+    display: none;
+    transition: all 0.5 ease;
+
+    
+}
+  .sidebar.active ul li a .links_name{
+    display: block;
+    transition: all 0.5 ease;
+  }
+
+
+.profile_content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #252527;
+}
+.profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 10px;
+}
+.profile_details{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user_img{
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.user_name{
+    color: #fff;
+    padding-left: 12px;
+  white-space:  nowrap;
+    
+}
+.profile i{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px;
+    transition: all 0.3s ease;
+
+}
+.profile i:hover{
+    background: #5e5d5d;
+    transition: all 0.3s ease;
+}
+.block{
+    display: none;
+}
+
+.link-active{
+    background: #5e5d5d;
+    border-radius: 12px;
+}
+
+
+

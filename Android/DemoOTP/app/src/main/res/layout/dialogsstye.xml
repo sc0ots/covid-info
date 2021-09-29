@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="200dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnokyte"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="match_parent">
+      <ImageView
+          android:layout_marginTop="20dp"
+          android:layout_gravity="center_horizontal"
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:background="@drawable/ic_checked"
+          />
+
+        <TextView
+            android:id="@+id/textokyte"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            android:text="Bạn đã gửi thông tin thành công"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

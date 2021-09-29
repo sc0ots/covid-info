@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F1E8E8"
+    android:orientation="vertical"
+    tools:context=".HOME.AcountFragment">
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:textStyle="bold"
+            android:text="Danh mục"
+            android:textSize="35dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/carviewacc"
+        android:id="@+id/accountID"
+        >
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:background="@drawable/ic_account"
+            />
+      <TextView
+          android:background="@color/white"
+          android:paddingTop="10dp"
+          android:paddingLeft="20dp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Thông tin cá nhân"
+          android:textSize="30dp"
+          />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/carviewacc"
+        android:id="@+id/SSKAccout"
+        >
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:background="@drawable/ic_open_book"
+            />
+      <TextView
+          android:background="@color/white"
+          android:paddingTop="10dp"
+          android:paddingLeft="20dp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Sổ Sức Khỏe"
+          android:textSize="30dp"
+          />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linePCR"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/carviewacc"
+        >
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:background="@drawable/ic_pcr"
+            />
+      <TextView
+          android:background="@color/white"
+          android:paddingTop="10dp"
+          android:paddingLeft="20dp"
+
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Kết quả  PCR"
+          android:textSize="30dp"
+          />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linerMap"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/carviewacc"
+        >
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:background="@drawable/ic_map_1"
+            />
+      <TextView
+          android:background="@color/white"
+          android:paddingTop="10dp"
+          android:paddingLeft="20dp"
+
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Cảnh báo khu vực dịch"
+          android:textSize="30dp"
+          />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linerTravel"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/carviewacc"
+        >
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:background="@drawable/ic_travel"
+            />
+      <TextView
+          android:background="@color/white"
+          android:paddingTop="10dp"
+          android:paddingLeft="20dp"
+
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Lịch sử đi lại"
+          android:textSize="30dp"
+          />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linerTermsUser1"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/carviewacc"
+        >
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:background="@drawable/ic_terms"
+            />
+      <TextView
+          android:background="@color/white"
+            android:paddingTop="10dp"
+          android:paddingLeft="20dp"
+
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="Diều khoản sử dụng"
+          android:textSize="30dp"
+          />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

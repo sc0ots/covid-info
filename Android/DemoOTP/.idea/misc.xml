@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/DemoOTP/app/src/main/res/drawable-v24/country_code_drawble1.xml" value="0.20833333333333334" />
+        <entry key="..\:/DemoOTP/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.20833333333333334" />
+        <entry key="..\:/DemoOTP/app/src/main/res/drawable/backgroung_daily.xml" value="0.13157894736842105" />
+        <entry key="..\:/DemoOTP/app/src/main/res/drawable/card_drawable.xml" value="0.20833333333333334" />
+        <entry key="..\:/DemoOTP/app/src/main/res/drawable/carviewacc.xml" value="0.13157894736842105" />
+        <entry key="..\:/DemoOTP/app/src/main/res/drawable/country_code_drawble.xml" value="0.20833333333333334" />
+        <entry key="..\:/DemoOTP/app/src/main/res/drawable/item_selector.xml" value="0.1" />
+        <entry key="..\:/DemoOTP/app/src/main/res/drawable/relativedg.xml" value="0.20833333333333334" />
+        <entry key="..\:/DemoOTP/app/src/main/res/drawable/relativedgg.xml" value="0.20833333333333334" />
+        <entry key="..\:/DemoOTP/app/src/main/res/drawable/round_corner.xml" value="0.1" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/activity_create_user.xml" value="0.1921875" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/activity_details_user.xml" value="0.2" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/activity_get_id.xml" value="0.18802083333333333" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/activity_hdclactivity.xml" value="0.1" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/activity_khaibao_yte.xml" value="0.25" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/activity_new_view.xml" value="0.1921875" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/activity_otp_screen.xml" value="0.25" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/activity_result.xml" value="0.25" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/activity_tokhai_yte.xml" value="0.18" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/activity_travel.xml" value="0.12138157894736842" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/activity_web_view.xml" value="0.178125" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/card_drawable.xml" value="0.1921875" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/fragment_acount.xml" value="0.18" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/fragment_new.xml" value="0.22" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/fragment_sk.xml" value="0.1" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/item_lv.xml" value="0.1921875" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/layout_item.xml" value="0.1921875" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/layout_item1.xml" value="0.1921875" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/layout_item_daily.xml" value="0.16" />
+        <entry key="..\:/DemoOTP/app/src/main/res/layout/layout_item_travel.xml" value="0.12138157894736842" />
+        <entry key="..\:/DemoOTP/app/src/main/res/menu/item_menu.xml" value="0.75" />
+        <entry key="..\:/DemoOTP/app/src/main/res/menu/menu_item.xml" value="0.1921875" />
+        <entry key="..\:/DemoOTP/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1175925925925926" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/drawable-v24/country_code_drawble1.xml" value="0.13157894736842105" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/drawable-v24/ic_baseline_edit_location_24.xml" value="0.13157894736842105" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/drawable-v24/ic_baseline_not_listed_location_24.xml" value="0.13157894736842105" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/drawable-v24/ic_checked.xml" value="0.13157894736842105" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/drawable-v24/ic_map_1.xml" value="0.13157894736842105" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/drawable/backgroung_daily.xml" value="0.13157894736842105" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/drawable/card_drawable.xml" value="0.13157894736842105" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/drawable/carviewacc.xml" value="0.13157894736842105" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/drawable/country_code_drawble.xml" value="0.13157894736842105" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/drawable/ic_account.xml" value="0.13157894736842105" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/drawable/ic_covid_test.xml" value="0.13157894736842105" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/drawable/ic_hospital.xml" value="0.13157894736842105" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/drawable/ic_locationwarning.xml" value="0.13157894736842105" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/drawable/ic_sk.xml" value="0.13157894736842105" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/drawable/ic_terms.xml" value="0.13157894736842105" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/drawable/ic_travel.xml" value="0.13157894736842105" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/drawable/ic_travellocation.xml" value="0.13157894736842105" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/drawable/ic_vaccien.xml" value="0.13157894736842105" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/drawable/item_selector.xml" value="0.13157894736842105" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/drawable/relativedg.xml" value="0.13157894736842105" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/activity_create_user.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/activity_details_user.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/activity_hdclactivity.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/activity_khaibao_yte.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/activity_main.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/activity_map.xml" value="0.33" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/activity_new_view.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/activity_otp_screen.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/activity_pcractivity.xml" value="0.16" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/activity_result.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/activity_so_suc_khoe.xml" value="0.16" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/activity_terms_user.xml" value="0.25" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/activity_tokhai_yte.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/activity_travel.xml" value="0.12019543973941368" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/activity_web_view.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/dialogss.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/dialogssUpdate.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/dialogsstye.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/dialogssupdate.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/fragment_acount.xml" value="0.16" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/fragment_home.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/fragment_new.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/fragment_sk.xml" value="0.12019543973941368" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/ic_map_1.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/item_lv.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/layout_item.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/layout_item1.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/layout_item_daily.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/layout_item_travel.xml" value="0.12138157894736842" />
+        <entry key="..\:/demoooo/DemoOTP/app/src/main/res/layout/lv_item_pcr.xml" value="0.24444444444444444" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.33" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
