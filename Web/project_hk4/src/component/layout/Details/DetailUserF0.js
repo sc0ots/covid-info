@@ -10,7 +10,7 @@ import { withGoogleMap, GoogleMap, withScriptjs, Marker, DirectionsRenderer } fr
 import Geocode from "react-geocode";
 var QRCode = require('qrcode.react');
 
-Geocode.setApiKey("AIzaSyBKaMgXoAdVYAUvDsbgSnUJCm8ufL6W0jk");
+Geocode.setApiKey("GOOGLE-API-KEY-HERE");
 Geocode.setLanguage("vn");
 Geocode.setRegion("vi");
 Geocode.enableDebug();
