@@ -8,7 +8,7 @@ import PlacesAutocomplete, { geocodeByAddress, getLatLng, } from 'react-places-a
 import { withGoogleMap, GoogleMap, TrafficLayer, Marker, DirectionsRenderer } from "react-google-maps";
 import Geocode from "react-geocode";
 
-Geocode.setApiKey("AIzaSyBKaMgXoAdVYAUvDsbgSnUJCm8ufL6W0jk");
+Geocode.setApiKey("");
 Geocode.setLanguage("vn");
 Geocode.setRegion("vi");
 Geocode.enableDebug();
